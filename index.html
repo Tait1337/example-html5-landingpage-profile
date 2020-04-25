@@ -1,0 +1,195 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Oliver Tribess</title>
+    <link rel="icon" href="favicon.ico">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+        * {
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        header {
+            padding-right: 0.75vw;
+        }
+
+        header p {
+            text-align: end;
+            font-size: 6em;
+            color: rgba(0, 0, 0, 0.6);
+            margin: 0px;
+            line-height: 0.7em;
+            margin-block-start: 0em;
+            margin-block-end: 0em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+        }
+
+        .row {
+            padding: 0.75vw;
+
+            display: grid;
+            grid-template-columns: repeat(64, 1fr);
+            grid-template-rows: 55vh 30vh;
+            grid-row-gap: 0.75vw;
+        }
+
+        .box a {
+            display: block;
+            width: 100%;
+            height: 100%;
+
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .box a:hover img {
+            filter: blur(2px);
+        }
+
+        .overlay {
+            opacity: 0;
+            text-align: center;
+            text-decoration: none;
+            color: #ffffff;
+
+            padding: 10%;
+
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .box a:hover .overlay {
+            transition: .2s all;
+            opacity: 1;
+            background: rgba(0, 0, 0, 0.2);
+        }
+
+        .box__inner {
+            width: 100%;
+            height: 100%;
+            position: relative;
+        }
+
+        .box__inner img {
+            width: 100%;
+            height: 100%;
+
+            object-position: 50% 50%;
+            object-fit: cover;
+
+            transition: opacity .2s ease-out;
+        }
+
+        .box--left {
+            clip-path: polygon(0 0, 98% 0, 83% 100%, 0 100%);
+            grid-row: 1;
+            grid-column: 1 / span 35;
+        }
+
+        .box--right {
+            clip-path: polygon(17% 0, 100% 0, 100% 100%, 2% 100%);
+            grid-row: 1;
+            grid-column: span 35 / -1;
+        }
+
+        .box--small {
+            grid-row: 2;
+        }
+
+        .box--small.box--left {
+            clip-path: polygon(0 0, 83% 0, 98% 100%, 0 100%);
+        }
+
+        .box--small.box--right {
+            clip-path: polygon(2% 0, 100% 0, 100% 100%, 17% 100%);
+        }
+
+        footer {
+            height: 1em;
+            width: 100%;
+            padding-right: 0.75vw;
+        }
+
+        footer p {
+            margin: 0px;
+            padding: 0px;
+            text-align: end;
+            font-size: 0.9em;
+            color: rgba(0, 0, 0, 0.6);
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <p>T R I B E S S</p>
+    </header>
+
+    <main>
+        <div class="row">
+            <div class="box box--left">
+                <div class="box__inner">
+                    <a href="#">
+                        <img src="img/architecture-bridge-buildings-business-374018.jpg" alt="Backend">
+                        <div class="overlay">
+                            <h2>Backend</h2>
+                            <p>My main specialty is Java but I'm also fascinated about Kotlin, Node.js and other technologies stacks.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="box box--right">
+                <div class="box__inner">
+                    <a href="#">
+                        <img src="img/abstract-business-code-coder-270348.jpg" alt="Web">
+                        <div class="overlay">
+                            <h2>Web</h2>
+                            <p>I'm comfortable with the main web technologies such as HTML, CSS, and JavaScript.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="box box--left box--small">
+                <div class="box__inner">
+                    <a href="https://github.com/Tait1337/">
+                        <img src="img/blank-business-composition-computer-373076.jpg" alt="Projects">
+                        <div class="overlay">
+                            <h2>Projects</h2>
+                            <p>Check out my work on GitHub.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="box box--right box--small">
+                <div class="box__inner">
+                    <a href="https://www.xing.com/profile/Oliver_Tribess">
+                        <img src="img/photo-of-people-standing-near-window-3184427.jpg" alt="Career">
+                        <div class="overlay">
+                            <h2>Career</h2>
+                            <p>Contact me on Xing.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Copyright © 2020 Oliver Tribess</p>
+    </footer>
+
+</body>
+
+</html>
