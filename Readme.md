@@ -1,7 +1,7 @@
 # example-html5-landingpage-profile
 ![build status](https://github.com/Tait1337/example-html5-landingpage-profile/workflows/build/badge.svg)
-![coverage status](https://github.com/Tait1337/example-html5-landingpage-profile/workflows/coverage/badge.svg)
-![license](https://img.shields.io/badge/license-Apache%20License%202.0-blue.svg?style=flat)
+[![quality gate status](https://sonarcloud.io/api/project_badges/measure?project=Tait1337_example-html5-landingpage-profile&metric=alert_status)](https://sonarcloud.io/dashboard?id=Tait1337_example-html5-landingpage-profile)
+[![license](https://img.shields.io/badge/license-Apache%20License%202.0-blue.svg?style=flat)](LICENSE.md)
 
 Plain HTML5 based One-Page Portfolio Website.
 
