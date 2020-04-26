@@ -15,9 +15,9 @@ jobs:
           heroku_api_key: ${{secrets.HEROKU_API_KEY}}
           heroku_app_name: "html5-landingpage-profile" #Must be unique in Heroku
           heroku_email: "${{secrets.HEROKU_MAIL}}"
-          buildpack: "" #OPTIONAL
-          branch: "" #OPTIONAL and DEFAULT - 'HEAD' (a.k.a your current branch)
-          dontuseforce: false #OPTIONAL and DEFAULT - false
+          #buildpack: "" #OPTIONAL
+          #branch: "" #OPTIONAL and DEFAULT - 'HEAD' (a.k.a your current branch)
+          #dontuseforce: false #OPTIONAL and DEFAULT - false
           usedocker: true #OPTIONAL and DEFAULT - false
-          appdir: "" #OPTIONAL and DEFAULT - "". This is useful if the api you're deploying is in a subfolder
-          docker_heroku_process_type: "" #OPTIONAL and DEFAULT - "web"
+          #appdir: "" #OPTIONAL and DEFAULT - "". This is useful if the api you're deploying is in a subfolder
+          #docker_heroku_process_type: "" #OPTIONAL and DEFAULT - "web"
