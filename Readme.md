@@ -1,4 +1,7 @@
 # example-html5-landingpage-profile
+![build status](https://github.com/Tait1337/example-html5-landingpage-profile/workflows/build/badge.svg)
+![coverage status](https://github.com/Tait1337/example-html5-landingpage-profile/workflows/coverage/badge.svg)
+![license](https://img.shields.io/badge/license-Apache%20License%202.0-blue.svg?style=flat)
 
 Plain HTML5 based One-Page Portfolio Website.
 
