@@ -42,7 +42,7 @@ In addition to that you can build the Application as Dockerimage with included W
 
 ```
 ./docker build -t example-html5-landingpage-profile:latest .
-./docker run -p 80:80 -d example-html5-landingpage-profile:latest
+./docker run --env-file .env -p 80:80 -d example-html5-landingpage-profile:latest
 ```
 
 ## Contributing
